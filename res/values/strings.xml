@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ReddroidActivity!</string>
+    <string name="app_name">Reddroid</string>
+    <string name="menu_browse">Browse</string>
+    <string name="connection_failed">Can\'t connect to internet servers.</string>
+</resources>
