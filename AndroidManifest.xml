@@ -15,17 +15,14 @@
             </intent-filter>
         </activity>
         
-        <activity android:name=".BernieActivity">
+        <activity android:name=".TwitSearchActivity">
 	        <intent-filter>
-	            <action android:name="android.intent.action.VIEW" />
+	            <action android:name="android.intent.action." />
 	            <category android:name="android.intent.category.DEFAULT" />
 	            <category android:name="android.intent.category.BROWSABLE" />
-	            <data android:scheme="http" android:host="www.reddit.com" android:pathPattern="/r/.*/comments/.*" />
-	            <data android:scheme="http" android:host="www.reddit.com" android:pathPrefix="/comments/" />
-	            <data android:scheme="http" android:host="www.reddit.com" android:pathPrefix="/tb/" />
-	            <data android:scheme="http" android:host="redd.it" android:pathPattern="/..*" />
+	            <data android:scheme="http" android:host="www.twitter.com" android:pathPattern="/search*" />
 	        </intent-filter>
 	    </activity>
-
+        
     </application>
 </manifest>

@@ -2,6 +2,6 @@
 <resources>
     <string name="hello">Hello World, ReddroidActivity!</string>
     <string name="app_name">Reddroid</string>
-    <string name="menu_browse">Browse</string>
+    <string name="menu_refresh">Refresh</string>
     <string name="connection_failed">Can\'t connect to internet servers.</string>
 </resources>

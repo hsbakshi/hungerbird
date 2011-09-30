@@ -50,10 +50,8 @@ public class ReddroidActivity extends ListActivity implements OnItemClickListene
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
-        case R.id.reddit:
-    		Intent pickSubredditIntent = new Intent(getApplicationContext(),
-					BernieActivity.class);
-			startActivity(pickSubredditIntent);
+        case R.id.refresh:
+        	new MyTrendsGetterTask().execute();
             return true;
         default:
             return super.onOptionsItemSelected(item);
@@ -91,6 +89,10 @@ public class ReddroidActivity extends ListActivity implements OnItemClickListene
 	public void onItemClick(AdapterView<?> aView, View view, int position, long id) {
 		TextView tview = (TextView) view;
 		Log.d(TAG, "onClick Position:"+position+" id:"+ id +" text:"+tview.getText().toString());
+		Intent twitSearchIntent = new Intent(getApplicationContext(),
+				TwitSearchActivity.class);
+		twitSearchIntent.putExtra("tweetQuery", tview.getText().toString());
+		startActivity(twitSearchIntent);
 	}
   
     
