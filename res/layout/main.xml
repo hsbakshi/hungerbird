@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.hrishibakshi.hungerbird"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:weightSum="1">
-	<TextView  android:id="@+id/hello"
+    android:layout_height="fill_parent">
+    
+    <com.markupartist.android.widget.ActionBar
+	    android:id="@+id/actionbar"
+	    app:title="@string/hello"
+	    style="@style/ActionBar"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
-	    android:text="@string/hello"/>
-	    
+	    />
+
+	<TextView
+	    android:id="@+id/hello"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/hello"
+	    android:visibility="invisible" />
+	 
 	<ListView android:id="@android:id/list"
     	android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"
-	    android:layout_alignParentTop="true"
-	    android:layout_above="@+id/hello"
 	    android:cacheColorHint="#00000000"
     	/>
+
 </LinearLayout>

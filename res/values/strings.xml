@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, ReddroidActivity!</string>
-    <string name="app_name">Reddroid</string>
+    <string name="hello">Trends</string>
+    <string name="app_name">Hunger Bird</string>
     <string name="menu_refresh">Refresh</string>
-    <string name="connection_failed">Can\'t connect to internet servers.</string>
+    <string name="connection_failed">Can\'t connect to The Internet.</string>
+    <string name="app_label">HungerBird</string>
+    <string name="search_hint">Search Twitter</string>
 </resources>
